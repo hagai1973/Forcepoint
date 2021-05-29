@@ -1,0 +1,60 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-29T20:13:44.522Z",
+        "line": 3,
+        "name": "Check the Google Local by label",
+        "description": "",
+        "id": "test-google-local;check-the-google-local-by-label",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3819916100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "open Google Chrome and go to Google.com",
+            "match": {
+              "location": "tests.GoogleTest.getIntoGoogle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: could not verify local country, check logs expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat tests.GoogleTest.checkLocalIsrael(GoogleTest.java:111)\r\n\tat ✽.Verify the lable of local(file:///C:/Users/hagai/workspace_Cucumber1/Forcepoint/src/test/java/features/GoogleTest.feature:5)\r\n",
+              "duration": 93750100,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "Verify the lable of local",
+            "match": {
+              "location": "tests.GoogleTest.checkLocalIsrael()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Quit browser",
+            "match": {
+              "location": "tests.GoogleTest.quit_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test Google local",
+    "description": "",
+    "id": "test-google-local",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/GoogleTest.feature",
+    "tags": []
+  }
+]
